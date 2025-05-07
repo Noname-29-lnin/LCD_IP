@@ -1,0 +1,46 @@
+Reset LCD
+Time=                 100, i_data=29, o_LCD_data=00, o_valid=0
+E=0, RS=0, RW=0
+------------------------------- Test Case 1 -------------------------------
+Test function initial LCD
+Test initial LCD
+Time=                 210, i_data=29, i_func=1
+o_LCD_DATA=0c, o_valid=1
+E=0, RS=0, RW=0
+------------------------------- Test Case 2 -------------------------------
+Test setcursor (0, 0)
+Time=            18550670, i_data=00, i_func=2
+o_LCD_DATA=0c, o_valid=1
+E=0, RS=0, RW=0
+Test setcursor (0, 5)
+Time=            37101110, i_data=05, i_func=2
+o_LCD_DATA=80, o_valid=1
+E=0, RS=0, RW=0
+Test setcursor (1, 0)
+Time=            37471190, i_data=10, i_func=2
+o_LCD_DATA=85, o_valid=1
+E=0, RS=0, RW=0
+Test setcursor (1, 5)
+Time=            37841270, i_data=15, i_func=2
+o_LCD_DATA=c0, o_valid=1
+E=0, RS=0, RW=0
+------------------------------- Test Case 3 -------------------------------
+Test send Data = 0x29
+Time=            38211350, i_data=29, i_func=3
+o_LCD_DATA=c5, o_valid=1
+E=0, RS=0, RW=0
+Test send Data = 0x30
+Time=            38581430, i_data=30, i_func=3
+o_LCD_DATA=29, o_valid=1
+E=0, RS=0, RW=0
+------------------------------- Test Case 4 -------------------------------
+Test send command = 0x01 (Clear display)
+Time=            38951510, i_data=01, i_func=4
+o_LCD_DATA=30, o_valid=1
+E=0, RS=0, RW=0
+Test send command = 0x06 (Entry mode set)
+Time=            39321590, i_data=06, i_func=4
+o_LCD_DATA=01, o_valid=1
+E=0, RS=0, RW=0
+Finish Simulation
+- tb_IP_LCD_control.sv:211: Verilog $finish
