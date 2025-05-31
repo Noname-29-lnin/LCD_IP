@@ -1,0 +1,125 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "o_LCD_DATA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "o_LCD_DATA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "o_LCD_DATA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "o_LCD_DATA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "o_LCD_DATA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "o_LCD_DATA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "o_LCD_DATA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "o_LCD_DATA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "o_LCD_E",
+					"strict" : false
+				},
+				{
+					"name" : "o_LCD_RS",
+					"strict" : false
+				},
+				{
+					"name" : "o_LCD_ON",
+					"strict" : false
+				},
+				{
+					"name" : "o_LCD_BLON",
+					"strict" : false
+				},
+				{
+					"name" : "o_done_lcd",
+					"strict" : false
+				},
+				{
+					"name" : "i_en_lcd",
+					"strict" : false
+				},
+				{
+					"name" : "i_lcd_blon",
+					"strict" : false
+				},
+				{
+					"name" : "i_clk",
+					"strict" : false
+				},
+				{
+					"name" : "i_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "i_rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "i_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "i_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "i_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "i_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "i_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "i_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "i_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "i_func[2]",
+					"strict" : false
+				},
+				{
+					"name" : "i_func[3]",
+					"strict" : false
+				},
+				{
+					"name" : "i_func[0]",
+					"strict" : false
+				},
+				{
+					"name" : "i_func[1]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

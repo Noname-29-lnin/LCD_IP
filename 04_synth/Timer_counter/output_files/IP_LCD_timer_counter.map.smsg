@@ -1,0 +1,1 @@
+Info (10281): Verilog HDL Declaration information at IP_LCD_timer_counter.sv(88): object "INIT_STEP" differs only in case from object "init_step" in the same scope File: /home/noname_lnin/Documents/project_tiny/LCD_IP/04_synth/Timer_counter/IP_LCD_timer_counter.sv Line: 88

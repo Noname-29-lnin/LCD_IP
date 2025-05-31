@@ -1,39 +1,39 @@
 # Configuration
-TOPMODULE := tb_IP_LCD_control 
-VERILATOR_FLAGS := --binary --timing --trace --build -f flist.f
+TOPMODULE := IP_LCD_timer_counter
+CPP_TESTBENCH := tb_IP_LCD_timer_counter.cpp
+VERILATOR_FLAGS := --cc --exe --build --timing --trace
 WARNING_IGNORE := -Wno-fatal -Wno-lint -Wno-style -Wno-width
+VERILOG_SOURCES := ../../02_rtl/IP_LCD_timer_counter.sv
 
 # Targets
 all: clean compile run
 
 compile:
-	@echo "-> Compiling design with Verilator (ignoring warnings)..."
-	@verilator $(VERILATOR_FLAGS) $(WARNING_IGNORE)
+	@echo "-> Compiling design with Verilator..."
+	@verilator $(VERILATOR_FLAGS) $(WARNING_IGNORE) \
+		--top-module $(TOPMODULE) \
+		$(VERILOG_SOURCES) \
+		$(CPP_TESTBENCH)
 
 run:
 	@echo "-> Running simulation..."
 	@./obj_dir/V$(TOPMODULE) | tee simulation.log
 	@echo "Simulation completed. Log saved to simulation.log"
 
-sim: run
+sim:
 	@echo "-> Opening waveform viewer..."
-	@if [ -f $(TOPMODULE).vcd ]; then \
-		gtkwave $(TOPMODULE).vcd; \
-	else \
-		echo "Error: $(TOPMODULE).vcd not found. Please ensure simulation ran successfully."; \
-		exit 1; \
-	fi
+	@gtkwave waveform.vcd &> /dev/null &
 
 clean:
 	@echo "-> Cleaning project..."
-	@rm -rf *.vcd obj_dir *.log *.dmp
+	@rm -rf obj_dir *.dmp *.vcd simulation.log
 
 help:
 	@echo "Makefile targets:"
 	@echo "  all      : Clean, compile and run (default)"
 	@echo "  compile  : Compile the design with Verilator"
 	@echo "  run      : Run the simulation"
-	@echo "  sim      : Run simulation and open waveform viewer"
+	@echo "  sim      : Open waveform viewer"
 	@echo "  clean    : Remove generated files"
 	@echo "  help     : Show this help message"
 

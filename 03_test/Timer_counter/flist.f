@@ -1,2 +1,2 @@
-./tb_IP_LCD_control.sv
-./../../02_rtl/IP_LCD_control.sv
+./IP_LCD_timer_counter.cpp
+./../../02_rtl/IP_LCD_timer_counter.sv

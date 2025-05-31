@@ -1,0 +1,111 @@
+{
+    signal: [
+        [ 'input',    
+            {
+                name: 'i_clk', 
+                wave: 'P..........................',
+                period: 1
+            },
+            {
+                name: 'i_rst_n',
+                wave: '0.1........................'
+            },
+            {
+                name: 'i_en_lcd',
+                wave: '0..1.......................'
+            },
+            {
+                name: 'i_fun',
+                wave: 'xxxx4xx4xx4xx4xx..4x.......',
+                data: ['0x00', '0x01', '0x02', '0x03', '0x00']
+            }
+        ],
+        [ 'output',
+            {
+                name: 'o_LCD_ON',    
+                wave: '0...1......................',
+            },
+            {
+                name: 'o_LCD_E',
+                wave: '0.....10..'
+            },
+            {
+                name: 'o_LCD_RW',    
+                
+            },
+            {
+                name: 'o_LCD_RS',    
+                
+            },
+            {
+                name: 'o_LCD_DATA',  
+            },
+            {
+                name: 'o_LCD_BLON',  
+                
+            },
+            {
+                name: 'o_done_lcd',  
+
+            }
+        ],
+        [ 'input',    
+            {
+                name: 'i_clk', 
+                wave: 'P..........................',
+                period: 1
+            },
+            {
+                name: 'i_rst_n',
+                wave: '0.1........................'
+            },
+            {
+                name: 'i_en_lcd',
+                wave: '0..1.......................'
+            },
+            {
+                name: 'i_fun',
+                wave: 'xxxx4xx4xx4xx4xx..4x.......',
+                data: ['0x00', '0x01', '0x02', '0x03', '0x00']
+            }
+        ],
+        [ 'output',
+            {
+                name: 'o_LCD_ON',    
+                wave: '0...1......................',
+            },
+            {
+                name: 'o_LCD_E',
+                wave: '0.....10..'
+            },
+            {
+                name: 'o_LCD_RW',    
+                
+            },
+            {
+                name: 'o_LCD_RS',    
+                
+            },
+            {
+                name: 'o_LCD_DATA',  
+            },
+            {
+                name: 'o_LCD_BLON',  
+                
+            },
+            {
+                name: 'o_done_lcd',  
+
+            }
+        ]
+    ],
+    head:{
+        text:'WaveDrom for LCD method using counter delay (init)',
+        tick:0,
+        every:2
+        },
+    foot:{
+        text:'Figure 1',
+        tock:9
+    }
+}
