@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Jun  1 20:28:07 2025
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : IP_LCD_timer_counter
+Top-level Entity Name : IP_LCD_timer_counter
+Family : Cyclone 10 LP
+Device : 10CL080YF780C8G
+Timing Models : Final
+Total logic elements : 138 / 81,264 ( < 1 % )
+    Total combinational functions : 133 / 81,264 ( < 1 % )
+    Dedicated logic registers : 72 / 81,264 ( < 1 % )
+Total registers : 72
+Total pins : 31 / 424 ( 7 % )
+Total virtual pins : 0
+Total memory bits : 0 / 2,810,880 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 488 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

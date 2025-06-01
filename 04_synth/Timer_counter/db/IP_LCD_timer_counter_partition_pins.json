@@ -56,7 +56,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "i_en_lcd",
+					"name" : "i_on_lcd",
 					"strict" : false
 				},
 				{
@@ -109,6 +109,10 @@
 				},
 				{
 					"name" : "i_func[3]",
+					"strict" : false
+				},
+				{
+					"name" : "i_en_lcd",
 					"strict" : false
 				},
 				{

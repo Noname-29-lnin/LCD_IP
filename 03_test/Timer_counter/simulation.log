@@ -1,0 +1,58 @@
+=========== Testcase: Control Signal ===========
+| Time =                  300 	| o_LCD_RW = 0 	| o_LCD_RS = 0 	| o_LCD_E = 0 	|
+| Time =                  300 	| o_LCD_DATA = 00 	| o_done_lcd = 0 	|
+ERROR: LCD should be disabled
+| Time =                  700 	| o_LCD_RW = 0 	| o_LCD_RS = 0 	| o_LCD_E = 0 	|
+| Time =                  700 	| o_LCD_DATA = 00 	| o_done_lcd = 0 	|
+=========== Testcase: Init ===========
+| Time =                  810 	| i_rst_n = 1 	| i_on_lcd = 1 	| i_lcd_blon = 1 	|
+| Time =                  810 	| i_en_lcd = 1 	| i_fun = 0 	| i_data = 00 	|
+| Time =                 3831 	| o_LCD_RW = 0 	| o_LCD_RS = 0 	| o_LCD_E = 0 	|
+| Time =                 3831 	| o_LCD_DATA = 0c 	| o_done_lcd = 1 	|
+=========== Testcase: Setcursor ===========
+| Time =                 3970 	| i_rst_n = 1 	| i_on_lcd = 1 	| i_lcd_blon = 1 	|
+| Time =                 3970 	| i_en_lcd = 1 	| i_fun = 1 	| i_data = 00 	|
+| Time =                 4171 	| o_LCD_RW = 0 	| o_LCD_RS = 0 	| o_LCD_E = 1 	|
+| Time =                 4171 	| o_LCD_DATA = 80 	| o_done_lcd = 1 	|
+=========== Testcase: Setcursor ===========
+| Time =                 4230 	| i_rst_n = 1 	| i_on_lcd = 1 	| i_lcd_blon = 1 	|
+| Time =                 4230 	| i_en_lcd = 1 	| i_fun = 1 	| i_data = 05 	|
+| Time =                 4391 	| o_LCD_RW = 0 	| o_LCD_RS = 0 	| o_LCD_E = 1 	|
+| Time =                 4391 	| o_LCD_DATA = 80 	| o_done_lcd = 1 	|
+=========== Testcase: Setcursor ===========
+| Time =                 4450 	| i_rst_n = 1 	| i_on_lcd = 1 	| i_lcd_blon = 1 	|
+| Time =                 4450 	| i_en_lcd = 1 	| i_fun = 1 	| i_data = 10 	|
+| Time =                 4611 	| o_LCD_RW = 0 	| o_LCD_RS = 0 	| o_LCD_E = 1 	|
+| Time =                 4611 	| o_LCD_DATA = 85 	| o_done_lcd = 1 	|
+=========== Testcase: Setcursor ===========
+| Time =                 4670 	| i_rst_n = 1 	| i_on_lcd = 1 	| i_lcd_blon = 1 	|
+| Time =                 4670 	| i_en_lcd = 1 	| i_fun = 1 	| i_data = 15 	|
+| Time =                 4831 	| o_LCD_RW = 0 	| o_LCD_RS = 0 	| o_LCD_E = 1 	|
+| Time =                 4831 	| o_LCD_DATA = c0 	| o_done_lcd = 1 	|
+=========== Testcase: Command ===========
+| Time =                 4970 	| i_rst_n = 1 	| i_on_lcd = 1 	| i_lcd_blon = 1 	|
+| Time =                 4970 	| i_en_lcd = 1 	| i_fun = 2 	| i_data = 01 	|
+| Time =                 5051 	| o_LCD_RW = 0 	| o_LCD_RS = 0 	| o_LCD_E = 1 	|
+| Time =                 5051 	| o_LCD_DATA = c5 	| o_done_lcd = 1 	|
+=========== Testcase: Command ===========
+| Time =                 5110 	| i_rst_n = 1 	| i_on_lcd = 1 	| i_lcd_blon = 1 	|
+| Time =                 5110 	| i_en_lcd = 1 	| i_fun = 2 	| i_data = 02 	|
+| Time =                 5591 	| o_LCD_RW = 0 	| o_LCD_RS = 0 	| o_LCD_E = 1 	|
+| Time =                 5591 	| o_LCD_DATA = 01 	| o_done_lcd = 1 	|
+=========== Testcase: Command ===========
+| Time =                 5650 	| i_rst_n = 1 	| i_on_lcd = 1 	| i_lcd_blon = 1 	|
+| Time =                 5650 	| i_en_lcd = 1 	| i_fun = 2 	| i_data = 06 	|
+| Time =                 6131 	| o_LCD_RW = 0 	| o_LCD_RS = 0 	| o_LCD_E = 1 	|
+| Time =                 6131 	| o_LCD_DATA = 02 	| o_done_lcd = 1 	|
+=========== Testcase: Command ===========
+| Time =                 6270 	| i_rst_n = 1 	| i_on_lcd = 1 	| i_lcd_blon = 1 	|
+| Time =                 6270 	| i_en_lcd = 1 	| i_fun = 3 	| i_data = 29 	|
+| Time =                 6351 	| o_LCD_RW = 0 	| o_LCD_RS = 0 	| o_LCD_E = 1 	|
+| Time =                 6351 	| o_LCD_DATA = 06 	| o_done_lcd = 1 	|
+=========== Testcase: Command ===========
+| Time =                 6410 	| i_rst_n = 1 	| i_on_lcd = 1 	| i_lcd_blon = 1 	|
+| Time =                 6410 	| i_en_lcd = 1 	| i_fun = 3 	| i_data = 30 	|
+| Time =                 6571 	| o_LCD_RW = 0 	| o_LCD_RS = 1 	| o_LCD_E = 1 	|
+| Time =                 6571 	| o_LCD_DATA = 29 	| o_done_lcd = 1 	|
+Finish test
+- tb_IP_LCD_timer_counter.sv:465: Verilog $finish

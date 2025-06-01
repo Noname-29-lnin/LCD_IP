@@ -1,15 +1,17 @@
 
 State Machine - |IP_LCD_timer_counter|state
-Name state.DONE_WAIT state.DONE state.DATA_WAIT state.DATA_SETUP state.CMD_WAIT state.CMD_SETUP state.SETCURSOR_WAIT state.SETCURSOR_SETUP state.INIT_STEP state.INIT_WAIT state.INIT_SETUP state.IDLE 
-state.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 
-state.INIT_SETUP 0 0 0 0 0 0 0 0 0 0 1 1 
-state.INIT_WAIT 0 0 0 0 0 0 0 0 0 1 0 1 
-state.INIT_STEP 0 0 0 0 0 0 0 0 1 0 0 1 
-state.SETCURSOR_SETUP 0 0 0 0 0 0 0 1 0 0 0 1 
-state.SETCURSOR_WAIT 0 0 0 0 0 0 1 0 0 0 0 1 
-state.CMD_SETUP 0 0 0 0 0 1 0 0 0 0 0 1 
-state.CMD_WAIT 0 0 0 0 1 0 0 0 0 0 0 1 
-state.DATA_SETUP 0 0 0 1 0 0 0 0 0 0 0 1 
-state.DATA_WAIT 0 0 1 0 0 0 0 0 0 0 0 1 
-state.DONE 0 1 0 0 0 0 0 0 0 0 0 1 
-state.DONE_WAIT 1 0 0 0 0 0 0 0 0 0 0 1 
+Name state.INIT_DONE_WAIT state.INIT_DONE state.DONE_WAIT state.DONE state.DATA_WAIT state.DATA_SETUP state.CMD_WAIT state.CMD_SETUP state.SETCURSOR_WAIT state.SETCURSOR_SETUP state.INIT_STEP state.INIT_WAIT state.INIT_SETUP state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.INIT_SETUP 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.INIT_WAIT 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.INIT_STEP 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.SETCURSOR_SETUP 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.SETCURSOR_WAIT 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.CMD_SETUP 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.CMD_WAIT 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.DATA_SETUP 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.DATA_WAIT 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.DONE 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.DONE_WAIT 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.INIT_DONE 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.INIT_DONE_WAIT 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
